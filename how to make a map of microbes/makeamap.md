@@ -20,7 +20,7 @@ You can see that the website address is in a fixed pattern:
 ```
 https://www.ncbi.nlm.nih.gov/sra/ + run_number
 ```
-And every run number has an according biosample number. If we enter the biosample webpage, luckily, we can see there’s a coordinate at 'the latitude and longitude' column:
+And every run number has an according biosample number. If we enter the biosample webpage, luckily, we can see there’s a coordinate at `the latitude and longitude` column:
 
 ![test][3]
 
@@ -34,7 +34,7 @@ However, sometimes we would find no coordinate reported in a sample (see below).
 
 Alright, this is the overall logic to decide the geographic distribution of our microbes. At first we gather the number of all SRA samples containing our 16S rRNA sequences, and the locations of these samples represent the locations of the microbes. The next question is how to extract so many coordinates from thousands of webpages.
 
-My answer would be web-crawling.
+**My answer would be web-crawling.**
 
 As is shown above, we can download all of the run pages. Make a list of command to download the pages:
 ```js
