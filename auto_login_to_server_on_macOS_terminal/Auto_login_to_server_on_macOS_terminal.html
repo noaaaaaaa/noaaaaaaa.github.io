@@ -274,8 +274,12 @@ pre[data-line] .line-highlight[data-end]:after {
 <code>touch computerInfo.ini</code><br>
 <code>vim computerInfo.ini</code><br>
 <code>i</code> to enter edit mode<br>
-put in <code>ip port user_name password name_of_server</code>, separate your account in different lines</p>
-<h2 class="mume-header" id="create-a-coreex-file-to-mimic-the-pipeline-of-entering-information">Create a <code>core.ex</code> file to mimic the pipeline of entering information</h2>
+Put in <code>ip port user_name password name_of_server</code>, separate your account in different lines<br>
+For example:</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript">#ip port user password description
+<span class="token number">130.102</span><span class="token number">.72</span><span class="token number">.25</span> <span class="token number">22</span> s4XXXXXX password goliath
+<span class="token number">192.12</span><span class="token number">.76</span><span class="token number">.251</span> <span class="token number">22</span> s4XXXXXX password flashlite
+</pre><h2 class="mume-header" id="create-a-coreex-file-to-mimic-the-pipeline-of-entering-information">Create a <code>core.ex</code> file to mimic the pipeline of entering information</h2>
 
 <pre data-role="codeBlock" data-info="js" class="language-javascript">#<span class="token operator">!</span><span class="token operator">/</span>usr<span class="token operator">/</span>bin<span class="token operator">/</span>expect
 <span class="token keyword">set</span> ip <span class="token punctuation">[</span>lindex $argv <span class="token number">0</span><span class="token punctuation">]</span>
@@ -312,8 +316,8 @@ read ip port user password <span class="token operator">&lt;&lt;</span><span cla
 <p><code>brew install expect</code></p>
 <h2 class="mume-header" id="alias-the-command-to-make-login-easier">Alias the command to make login easier</h2>
 
-<p>Put <code>alias login=&apos;/Users/apple/.ssh/login.sh&apos;</code> in <code>.bashrc</code></p>
-<p>and <code>source .bashrc</code></p>
+<p>Put <code>alias login=&apos;/Users/apple/.ssh/login.sh&apos;</code> in <code>.bashrc</code> and <code>.zshrc</code></p>
+<p><code>source .bashrc</code> and <code>source .zshrc</code></p>
 <h2 class="mume-header" id="well-done-type-login-to-see-what-you-can-get">Well done, type <code>login</code> to see what you can get!</h2>
 
 

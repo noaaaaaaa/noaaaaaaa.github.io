@@ -8,7 +8,13 @@ If you are a user of serveral servers and want to simplify the process everytime
 `touch computerInfo.ini`
 `vim computerInfo.ini`
 `i` to enter edit mode
-put in `ip port user_name password name_of_server`, separate your account in different lines
+Put in `ip port user_name password name_of_server`, separate your account in different lines
+For example:
+```js
+#ip port user password description
+130.102.72.25 22 s4XXXXXX password goliath
+192.12.76.251 22 s4XXXXXX password flashlite
+```
 
 ## Create a `core.ex` file to mimic the pipeline of entering information
 
@@ -57,8 +63,8 @@ Notice that `core.ex` file can only be run with `expect`
 
 ## Alias the command to make login easier
 
-Put `alias login='/Users/apple/.ssh/login.sh'` in `.bashrc`
+Put `alias login='/Users/apple/.ssh/login.sh'` in `.bashrc` and `.zshrc`
 
-and `source .bashrc`
+`source .bashrc` and `source .zshrc`
 
 ## Well done, type `login` to see what you can get!
