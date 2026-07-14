@@ -492,8 +492,7 @@ a:focus {
 }
 
 .game-panel,
-.game-window,
-.stat-card {
+.game-window {
   background: var(--panel);
   border: 6px solid var(--line);
   box-shadow: 0 0 0 3px rgba(255,255,255,0.26) inset, 6px 6px 0 rgba(29,59,49,0.4);
@@ -759,6 +758,40 @@ a:focus {
   color: #fffbe5;
 }
 
+.hero-image-card {
+  background: #e8efd2;
+  border: 5px solid var(--line);
+  box-shadow: 4px 4px 0 rgba(29,59,49,0.32);
+  margin: 0;
+  min-height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image-card img {
+  display: block;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.hero-image-card figcaption {
+  background: rgba(255,242,191,0.94);
+  border-left: 4px solid var(--line);
+  border-top: 4px solid var(--line);
+  bottom: 0;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.35;
+  padding: 8px 10px;
+  position: absolute;
+  right: 0;
+  width: min(82%, 330px);
+}
+
 .pixel-map {
   background:
     linear-gradient(90deg, rgba(53,93,67,0.15) 2px, transparent 2px),
@@ -807,8 +840,8 @@ a:focus {
   left: 24px;
 }
 
-.stats-grid,
 .quest-grid,
+.stats-grid,
 .figure-grid,
 .impact-grid,
 .timeline {
@@ -820,29 +853,12 @@ a:focus {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.stat-card {
-  min-height: 110px;
-  padding: 16px;
-}
-
-.stat-card strong {
-  color: #145f4a;
-  display: block;
-  font-size: 28px;
-  line-height: 1;
-  margin-bottom: 9px;
-}
-
-.stat-card span {
-  color: var(--muted);
-  font-weight: 700;
-}
-
 .quest-grid,
 .figure-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.stat-card,
 .research-card,
 .figure-card,
 .impact-card,
@@ -856,16 +872,36 @@ a:focus {
   transition: transform 130ms ease, box-shadow 130ms ease, background 130ms ease;
 }
 
+.stat-card:hover,
 .research-card:hover,
 .figure-card:hover,
 .impact-card:hover,
 .output-card:hover,
-.timeline article:hover,
-.stat-card:hover {
+.timeline article:hover {
   background: #f3efd1;
   box-shadow: 5px 5px 0 rgba(29,59,49,0.32);
   text-decoration: none;
   transform: translateY(-3px);
+}
+
+.stat-card {
+  min-height: 116px;
+}
+
+.stat-card strong {
+  color: #145f4a;
+  display: block;
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.stat-card span {
+  color: var(--muted);
+  display: block;
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 .card-sprite {
@@ -1169,6 +1205,33 @@ a:focus {
 
 .lab-link {
   border-radius: 50% 50% 4px 4px;
+}
+
+.email-link {
+  background: #fff2bf;
+}
+
+.email-link::before {
+  background: transparent;
+  border: 3px solid var(--line);
+  content: "";
+  height: 12px;
+  left: 4px;
+  position: absolute;
+  top: 5px;
+  width: 14px;
+}
+
+.email-link::after {
+  border-bottom: 3px solid var(--line);
+  border-right: 3px solid var(--line);
+  content: "";
+  height: 7px;
+  left: 8px;
+  position: absolute;
+  top: 5px;
+  transform: rotate(45deg);
+  width: 7px;
 }
 
 .linkedin-link {
