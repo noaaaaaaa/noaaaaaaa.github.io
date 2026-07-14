@@ -1410,12 +1410,18 @@ a:focus {
     grid-template-columns: 1fr;
   }
 
+  .main-panel {
+    order: 1;
+  }
+
   .side-panel {
+    order: 2;
     position: static;
   }
 
   .profile-panel {
     display: block;
+    order: 3;
     position: static;
   }
 
@@ -1428,10 +1434,41 @@ a:focus {
     grid-template-columns: 1fr;
   }
 
+  .game-window {
+    padding: 12px;
+  }
+
   .window-header {
     align-items: flex-start;
     flex-direction: column;
     gap: 8px;
+  }
+
+  .hero-content {
+    gap: 14px;
+  }
+
+  .hero-content h2 {
+    font-size: 27px;
+    line-height: 1.18;
+  }
+
+  .lead {
+    font-size: 15px;
+  }
+
+  .hero-image-card {
+    min-height: 220px;
+  }
+
+  .hero-image-card img {
+    min-height: 220px;
+  }
+
+  .hero-image-card figcaption {
+    font-size: 11px;
+    position: static;
+    width: auto;
   }
 
   .hero-profile-card {
