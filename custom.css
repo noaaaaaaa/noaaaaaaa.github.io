@@ -436,9 +436,11 @@ a:focus {
 }
 
 .game-tabs {
-  background: var(--panel-dark);
-  border: 6px solid var(--line);
-  box-shadow: 0 6px 0 var(--shadow);
+  background:
+    repeating-linear-gradient(90deg, rgba(105,68,43,0.18) 0 12px, rgba(211,155,88,0.16) 12px 24px),
+    linear-gradient(#b97942, #8f5934);
+  border: 6px solid #5d3925;
+  box-shadow: 0 6px 0 #3d2519, 0 0 0 3px rgba(255,229,168,0.22) inset;
   display: grid;
   gap: 6px;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -453,9 +455,9 @@ a:focus {
 .tab,
 .pixel-button,
 .filter-button {
-  background: #dfe9c9;
-  border: 4px solid var(--line);
-  box-shadow: 3px 3px 0 rgba(29,59,49,0.38);
+  background: #f5eccb;
+  border: 4px solid #5d3925;
+  box-shadow: 3px 3px 0 rgba(61,37,25,0.38), 0 0 0 2px rgba(255,255,255,0.18) inset;
   color: var(--ink);
   display: inline-flex;
   font-size: 15px;
@@ -474,10 +476,23 @@ a:focus {
 .pixel-button:hover,
 .filter-button:hover,
 .filter-button.active {
-  background: #fff2bf;
+  background: #ffe3a0;
   color: var(--ink);
   text-decoration: none;
   transform: translateY(-2px);
+}
+
+.pixel-button,
+.filter-button {
+  background: #dfe9c9;
+  border-color: var(--line);
+  box-shadow: 3px 3px 0 rgba(29,59,49,0.38);
+}
+
+.pixel-button:hover,
+.filter-button:hover,
+.filter-button.active {
+  background: #fff2bf;
 }
 
 .game-shell {
