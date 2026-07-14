@@ -705,6 +705,109 @@ a:focus {
   text-align: center;
 }
 
+.visitor-widget {
+  background:
+    repeating-linear-gradient(90deg, rgba(105,68,43,0.13) 0 10px, rgba(211,155,88,0.12) 10px 20px),
+    #f5eccb;
+  border: 5px solid #5d3925;
+  box-shadow: 3px 3px 0 rgba(61,37,25,0.34), 0 0 0 3px rgba(255,255,255,0.2) inset;
+  margin-top: 12px;
+  padding: 10px;
+}
+
+.visitor-title {
+  align-items: center;
+  color: #3d2519;
+  display: flex;
+  font-size: 15px;
+  font-weight: 900;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.visitor-light {
+  animation: radar-pulse 1.8s ease-in-out infinite;
+  background: #4fb37e;
+  border: 3px solid var(--line);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(79,179,126,0.22);
+  height: 16px;
+  width: 16px;
+}
+
+.visitor-screen {
+  background:
+    linear-gradient(90deg, rgba(79,179,126,0.12) 1px, transparent 1px),
+    linear-gradient(rgba(79,179,126,0.12) 1px, transparent 1px),
+    #1f342d;
+  background-size: 10px 10px;
+  border: 4px solid #355d43;
+  box-shadow: inset 0 0 0 3px rgba(255,255,255,0.05);
+  overflow: hidden;
+  padding: 7px;
+}
+
+.visitor-map-slot {
+  align-items: center;
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255,242,191,0.16) 0 4px, transparent 5px),
+    radial-gradient(circle at 70% 72%, rgba(79,179,126,0.12) 0 5px, transparent 6px),
+    #27463e;
+  border: 3px solid rgba(169,216,182,0.38);
+  display: flex;
+  justify-content: center;
+  min-height: 150px;
+  padding: 6px;
+}
+
+.visitor-map-slot a,
+.visitor-map-slot img,
+.visitor-map-slot canvas,
+.visitor-map-slot iframe {
+  display: block;
+  max-width: 100%;
+}
+
+.visitor-map-slot img {
+  border: 3px solid rgba(255,242,191,0.36);
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.24);
+  height: auto;
+}
+
+.visitor-stats-link {
+  background: #fff2bf;
+  border: 3px solid #5d3925;
+  box-shadow: 2px 2px 0 rgba(61,37,25,0.32);
+  color: #3d2519;
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  margin-top: 7px;
+  padding: 7px 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.visitor-stats-link:hover,
+.visitor-stats-link:focus {
+  background: #ffe3a0;
+  color: #3d2519;
+  text-decoration: none;
+}
+
+@keyframes radar-pulse {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .main-panel {
   display: grid;
   gap: 12px;
