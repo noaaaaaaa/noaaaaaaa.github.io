@@ -1,267 +1,451 @@
 <!DOCTYPE html>
-<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Zicheng Su&#39;s academic website">
-    <meta name="keywords" content="Zicheng Su, UQ">
-    <meta name="author" content="Zicheng Su">
-    <title>Zicheng Su</title>
-    <link rel="icon" href="UQ logo.png">
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zicheng Su's academic website">
+  <meta name="keywords" content="Zicheng Su, UQ, PFAS, environmental engineering, water engineering">
+  <meta name="author" content="Zicheng Su">
+  <title>Zicheng Su | Environmental Research Island</title>
+  <link rel="icon" href="UQ logo.png">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
+  <script async src="analytics.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-103575946-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="translateelement.css">
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="custom.css" rel="stylesheet">
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="pixel-sky" aria-hidden="true">
+    <div class="cloud cloud-a"></div>
+    <div class="cloud cloud-b"></div>
+    <div class="mountain mountain-a"></div>
+    <div class="mountain mountain-b"></div>
+    <div class="forest forest-a"></div>
+    <div class="forest forest-b"></div>
+    <div class="brisbane-river"></div>
+    <div class="story-bridge"><span></span></div>
+    <div class="uq-arcade"><span></span><span></span><span></span></div>
+    <div class="jacaranda jacaranda-a"></div>
+    <div class="jacaranda jacaranda-b"></div>
+    <div class="city-ferry"></div>
+    <div class="lab-house">
+      <span></span>
+    </div>
+  </div>
 
-    <script async="" src="analytics.js"></script><script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-103575946-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-  <link type="text/css" rel="stylesheet" charset="UTF-8" href="translateelement.css"></head>
-
-  <body>
-
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand"><strong>Zicheng Su</strong></a></div>
+  <header class="game-hero">
+    <div class="wood-sign">
+      <div class="badge-mark">ZS</div>
+      <div>
+        <p>Environmental Research Island</p>
+        <h1>Zicheng Su</h1>
       </div>
-    </nav>
+    </div>
+    <div class="hero-profile-card">
+      <img src="zicheng-cartoon-avatar.png" alt="Cartoon avatar of Zicheng Su">
+      <div>
+        <strong>Postdoctoral Researcher</strong>
+        <span>AIBN, The University of Queensland</span>
+      </div>
+    </div>
+  </header>
 
-    <div class="container">
-    <div class="row main">
-        <div class="col-md-3 col-sm-4" ,="" style="float: left;">
-          <img src="19591629029032_.pic.jpg" alt="Zicheng">
+  <nav class="game-tabs" aria-label="Main navigation">
+    <a class="tab active" href="#overview">Overview</a>
+    <a class="tab" href="#research">Research</a>
+    <a class="tab" href="#impact">Funding &amp; IP</a>
+    <a class="tab" href="#publications">Publications</a>
+    <a class="tab" href="#experience">Experience</a>
+    <a class="tab" href="#service">Service</a>
+  </nav>
 
-          <h5><b>Contact</b></h5>
-          Email: zicheng.su@uq.edu.au
-          <p>Addr: Building 75,Cnr College Rd &, Cooper Rd, St Lucia QLD 4067</p>
-         
+  <main class="game-shell">
+    <aside class="game-panel side-panel">
+      <div class="panel-title">Research Quests</div>
+      <a class="quest active" href="#overview">
+        <span class="quest-icon pfas-icon"><i></i></span>
+        <strong>PFAS Treatment</strong>
+        <small>pilot sorbents and membranes</small>
+      </a>
+      <a class="quest" href="#research">
+        <span class="quest-icon microbe-icon"><i></i></span>
+        <strong>Water Microbiology</strong>
+        <small>acidic nitrifiers and bioinformatics</small>
+      </a>
+      <a class="quest" href="#impact">
+        <span class="quest-icon funding-icon"><i></i></span>
+        <strong>Translation</strong>
+        <small>funding, IP and licence pathway</small>
+      </a>
+      <a class="quest" href="#publications">
+        <span class="quest-icon paper-icon"><i></i></span>
+        <strong>Publications</strong>
+        <small>PFAS, water, microbiology</small>
+      </a>
+      <div class="create-button">Interdisciplinary scholar + commercialisation crossover</div>
+    </aside>
 
-          <!-- <div class="smallskip"></div> -->
-          <h5><b>Links</b></h5>
-          <a href="https://aibn.uq.edu.au/zhang" target="_blank">Zhang group@AIBN</a>
-          <div class="smallskip"></div>
-          <a href="https://www.linkedin.com/in/%E6%A2%93%E6%BE%84-%E8%8B%8F-252547160" target="_blank">Linkedin</a>
-          <div class="smallskip"></div>
-          <a href="https://aibn.uq.edu.au/" target="_blank">AIBN@UQ</a>
-          <p></p>
-          <p></p>
-          <p></p>
-			<p>
-                </p>
-			<p>
-                </p>
-			<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=CbQxBykge90-IPLEosMfaNbtGGg3qkP1L1WZTKDQN4k&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
-			<p>Last updated on March 29, 2025 by Zicheng Su </p>
-			<p>All rights reserved. </p>
+    <section class="main-panel">
+      <section id="overview" class="game-window hero-window reveal-on-scroll">
+        <div class="window-header">
+          <span>Main Quest</span>
+          <a href="mailto:zicheng.su@uq.edu.au">zicheng.su@uq.edu.au</a>
         </div>
-        <div class="col-md-7">
-          <h3>About Me</h3>
-          <hr>
-          <p>Hi, I’m Zicheng, a postdoctoral researcher at the Australian Institute for Bioengineering and Nanotechnology (AIBN), University of Queensland. My work revolves around tackling one of the trickiest environmental challenges—PFAS, the infamous “forever chemicals” that just don’t want to leave! I specialise in removing them from tricky environments like biosolids, soil, and landfill leachate. Right now, I’m leading a pilot project on PFAS removal and working to bring PFAS sorption technologies from the lab to the real world.</p>
-          
-          <p>Before my postdoc, I did my PhD at UQ’s Australian Centre for Water and Environmental Biotechnology (ACWEB), where I dived deep into the fascinating world of novel nitrogen cycle microorganisms. Science has always been my playground, and I love finding creative ways to turn research into real solutions for a cleaner planet.</p>
-          
-          <h3>Portfolio</h3>
-          <hr>
-          
-              <!-- <h4>Reasoning with  Knowledge Graphs</h4> -->
-              <ul>
+        <div class="hero-content">
+          <div>
+            <p class="eyebrow">PFAS | Water Engineering | Applied Microbiology</p>
+            <h2>Turning environmental chemistry and microbiology into field-ready treatment technologies.</h2>
+            <p class="lead">I develop PFAS removal technologies for complex waste streams and microbial processes for sustainable water treatment, with current work spanning magnetic/polymer sorbents, adsorption membranes, foam-fractionation integration and pilot deployment.</p>
+            <div class="hero-actions">
+              <a class="pixel-button primary" href="#impact">View impact</a>
+              <a class="pixel-button" href="#publications">View papers</a>
+            </div>
+          </div>
+          <div class="pixel-map" aria-label="Research pathway map">
+            <div class="map-node node-pfas">PFAS capture</div>
+            <div class="map-node node-pilot">Pilot deployment</div>
+            <div class="map-node node-ip">IP licence</div>
+            <div class="map-node node-bio">N-cycle microbiology</div>
+          </div>
+        </div>
+      </section>
 
-                <p>
-                </p>
-				  <li><strong>Tutorial<br>
-				      <br>
-				  </strong>
-				    <p><strong><a href="https://noaaaaaaa.github.io/auto_login_to_server_on_macOS_terminal/Auto_login_to_server_on_macOS_terminal.html" target="_blank">How to make login to server easier on MacOS terminal</a></strong></p>
+      <section class="stats-grid reveal-on-scroll" aria-label="Profile highlights">
+        <article class="stat-card">
+          <strong>10</strong>
+          <span>Published journal articles</span>
+        </article>
+        <article class="stat-card">
+          <strong>6</strong>
+          <span>First/co-first author outputs</span>
+        </article>
+        <article class="stat-card">
+          <strong>&gt;$7.9M</strong>
+          <span>Competitive project value as CI</span>
+        </article>
+        <article class="stat-card">
+          <strong>392</strong>
+          <span>Citations, h-index 8</span>
+        </article>
+      </section>
 
-				  
-				  <!-- 
-				  </ol>
-		
-				  <div class="title">Title</div>
-      <div class="author">
-       <em>Zicheng, Su</em>,
-		  </div>
+      <section id="research" class="game-window reveal-on-scroll">
+        <div class="window-header">
+          <span>Research Areas</span>
+          <small>field-ready environmental solutions</small>
+        </div>
+        <div class="quest-grid">
+          <article class="research-card">
+            <span class="card-sprite pfas-sprite"></span>
+            <h3>PFAS removal in complex matrices</h3>
+            <p>Magnetic/polymer sorbents and adsorption membranes for PFAS treatment in biosolids, contaminated soil, industrial water and landfill leachate.</p>
+          </article>
+          <article class="research-card">
+            <span class="card-sprite water-sprite"></span>
+            <h3>Water treatment process engineering</h3>
+            <p>Packed-bed hydraulics, pilot filtration, foam-fractionation integration, contaminant-safe reuse and deployable treatment design.</p>
+          </article>
+          <article class="research-card">
+            <span class="card-sprite microbe-sprite"></span>
+            <h3>Acidic nitrogen cycling microbiology</h3>
+            <p>Acid-tolerant nitrifiers, nitrite oxidation, anammox adaptation and comammox communities in engineered wastewater systems.</p>
+          </article>
+        </div>
+      </section>
 
-      <div class="periodical">
-      
-        <em>Journal</em>
-      
+      <section class="game-window visual-highlights reveal-on-scroll">
+        <div class="window-header">
+          <span>Research Highlights</span>
+          <small>original visual summaries</small>
+        </div>
+        <div class="figure-grid">
+          <a class="figure-card" href="https://www.nature.com/articles/s41578-025-00795-1" target="_blank" rel="noopener">
+            <div class="mini-figure sorbent-map"><span></span><span></span><span></span><span></span></div>
+            <h3>PFAS sorbent reporting standard</h3>
+            <p>Minimum data logic for comparing new sorbents.</p>
+          </a>
+          <a class="figure-card" href="https://doi.org/10.1002/adma.202516944" target="_blank" rel="noopener">
+            <div class="mini-figure kinetic-plot"><i></i><i></i><i></i><i></i></div>
+            <h3>Standardized PFAS sorbent evaluation</h3>
+            <p>Performance metrics and comparison logic for PFAS materials.</p>
+          </a>
+          <a class="figure-card" href="https://doi.org/10.1002/adma.202502427" target="_blank" rel="noopener">
+            <div class="mini-figure process-flow"><span></span><span></span><span></span></div>
+            <h3>Magnetic PFAS capture</h3>
+            <p>Non-PFAS polymer sorbents for landfill leachate.</p>
+          </a>
+        </div>
+      </section>
 
+      <section class="game-window reveal-on-scroll">
+        <div class="window-header">
+          <span>Selected Outputs</span>
+          <small>high-signal publications</small>
+        </div>
+        <div class="output-list">
+          <article class="output-card">
+            <span class="output-year">2025</span>
+            <div>
+              <h3>Minimal data required in reporting new sorbents for removing 'forever chemicals'</h3>
+              <p>First-author perspective in <em>Nature Reviews Materials</em> on robust reporting standards for PFAS sorbent research.</p>
+              <a href="https://www.nature.com/articles/s41578-025-00795-1" target="_blank" rel="noopener">Read article</a>
+            </div>
+          </article>
+          <article class="output-card">
+            <span class="output-year">2025</span>
+            <div>
+              <h3>Kinetic and physiological characterization of acidophilic Nitrobacter spp.</h3>
+              <p>First-author <em>Environmental Science &amp; Technology</em> study on nitrite-oxidizing cultures under acidic conditions.</p>
+              <a href="https://pubs.acs.org/doi/abs/10.1021/acs.est.4c10020" target="_blank" rel="noopener">Read article</a>
+            </div>
+          </article>
+          <article class="output-card">
+            <span class="output-year">2024</span>
+            <div>
+              <h3>Control strategies for PFAS in aquatic environments</h3>
+              <p>Book chapter in UNESCO's <em>Emerging Contaminants in Water in Asia Pacific</em>, Chapter 4, Section 4.4.</p>
+              <a href="https://unesdoc.unesco.org/ark:/48223/pf0000398363" target="_blank" rel="noopener">UNESCO record</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        2020
-      
+      <section id="impact" class="game-window reveal-on-scroll">
+        <div class="window-header">
+          <span>Funding, IP &amp; Translation</span>
+          <small>selected records</small>
+        </div>
+        <div class="impact-grid">
+          <article class="impact-card">
+            <div class="impact-kicker">Funding</div>
+            <h3>PFAS biosolids remediation</h3>
+            <p>CRC-P CRCPXVII000450; AUD6.97M total project value; CI, one of two chief investigators.</p>
+          </article>
+          <article class="impact-card">
+            <div class="impact-kicker">Funding</div>
+            <h3>PFAS adsorption membranes for mobile treatment of persistent chemicals</h3>
+            <p>ARC Linkage LP250100270; AUD580k; CI role.</p>
+          </article>
+          <article class="impact-card">
+            <div class="impact-kicker">Industry funding</div>
+            <h3>Seed and direct industry projects</h3>
+            <p>&gt;AUD330k for nanoscale magnetic sorbents, foam-fractionation recovery and PFAS capture in biosolids.</p>
+          </article>
+          <article class="impact-card">
+            <div class="impact-kicker">Patent / IP</div>
+            <h3>PFAS sorbent patent WO2025905313</h3>
+            <p>Inventor on filed PFAS sorbent IP; helped enable a UniQuest-mediated licence within approximately one year.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="game-window reveal-on-scroll">
+        <div class="window-header">
+          <span>Peer-Reviewed Publications</span>
+          <div class="filter-controls" aria-label="Publication filters">
+            <button type="button" class="filter-button active" data-filter="all">All</button>
+            <button type="button" class="filter-button" data-filter="pfas">PFAS</button>
+            <button type="button" class="filter-button" data-filter="microbiology">Microbiology</button>
+            <button type="button" class="filter-button" data-filter="review">Reviews</button>
+            <button type="button" class="filter-button" data-filter="book">Books</button>
+          </div>
+        </div>
+        <ol class="publication-list" reversed>
+          <li data-topic="microbiology greenhouse-gas">
+            <p class="pub-title">Substantial N2O accumulation under acidic oxic conditions driven by constrained N2O reduction in a denitrifying consortium</p>
+            <p><strong>Zicheng Su</strong> et al. (2026). <em>Environmental Science &amp; Technology</em>, under revision; manuscript no. es-2026-037052.R1.</p>
+          </li>
+          <li data-topic="pfas">
+            <p class="pub-title">Toward standardized evaluation of PFAS sorbents</p>
+            <p>Zhuojing Yang, <strong>Zicheng Su</strong>, Kehan Liu et al. (2025). <em>Advanced Materials</em>. <a href="https://doi.org/10.1002/adma.202516944" target="_blank" rel="noopener">Published</a></p>
+          </li>
+          <li data-topic="pfas">
+            <p class="pub-title">Non-PFAS-based magnetic polymer sorbents for efficient removal of perfluorinated compounds from landfill leachate</p>
+            <p>Xiao Tan, Zhuojing Yang, Zhe Chen, <strong>Zicheng Su</strong> et al. (2025). <em>Advanced Materials</em>. <a href="https://doi.org/10.1002/adma.202502427" target="_blank" rel="noopener">Published</a></p>
+          </li>
+          <li data-topic="pfas review">
+            <p class="pub-title">Minimal data required in reporting new sorbents for removing 'forever chemicals'</p>
+            <p><strong>Zicheng Su</strong>, Zhuojing Yang, Kehan Liu, Chunrong Yu, Jianhua Guo, and Cheng Zhang (2025). <em>Nature Reviews Materials</em>. <a href="https://www.nature.com/articles/s41578-025-00795-1" target="_blank" rel="noopener">Published</a></p>
+          </li>
+          <li data-topic="microbiology">
+            <p class="pub-title">Kinetic and Physiological Characterization of Acidophilic Nitrobacter spp. in a Nitrite-Oxidizing Culture</p>
+            <p><strong>Zicheng Su</strong>, Tianyi Zhang, Tao Liu, Min Zheng, and Jianhua Guo (2025). <em>Environmental Science &amp; Technology</em>. <a href="https://pubs.acs.org/doi/abs/10.1021/acs.est.4c10020" target="_blank" rel="noopener">Published</a></p>
+          </li>
+          <li data-topic="microbiology">
+            <p class="pub-title">Enrichment and identification of a moderately acidophilic nitrite-oxidizing bacterium</p>
+            <p>Jun Xia, Chen Cai, Tao Liu, <strong>Zicheng Su</strong>, Zhiguo Yuan, and Min Zheng* (2025). <em>Water Research X</em>. <a href="https://doi.org/10.1016/j.wroa.2025.100308" target="_blank" rel="noopener">Published</a></p>
+          </li>
+          <li data-topic="microbiology review">
+            <p class="pub-title">Nitrite Oxidation in Wastewater Treatment: Microbial Adaptation and Suppression Challenges</p>
+            <p><strong>Zicheng Su</strong>, Tao Liu, Jianhua Guo, and Min Zheng* (2023). <em>Environmental Science &amp; Technology</em>. <a href="https://doi.org/10.1021/acs.est.3c00636" target="_blank" rel="noopener">Published, Critical Review</a></p>
+          </li>
+          <li data-topic="microbiology">
+            <p class="pub-title">Adaptation of anammox process for nitrogen removal from acidic nitritation effluent in a low pH moving bed biofilm reactor</p>
+            <p>Zhetai Hu, Tao Liu, <strong>Zicheng Su</strong>, Jing Zhao, Jianhua Guo, Shihu Hu, Zhiguo Yuan, and Min Zheng* (2023). <em>Water Research</em>. <a href="https://doi.org/10.1016/j.watres.2023.120370" target="_blank" rel="noopener">Published</a></p>
+          </li>
+          <li data-topic="microbiology">
+            <p class="pub-title">Selective Enrichment of Comammox Nitrospira in a Moving Bed Biofilm Reactor with Sufficient Oxygen Supply</p>
+            <p>Jing Zhao, Min Zheng*, <strong>Zicheng Su</strong>, Tao Liu, Jie Li, Jianhua Guo, Zhiguo Yuan, and Shihu Hu (2022). <em>Environmental Science &amp; Technology</em>. <a href="https://doi.org/10.1021/acs.est.2c03299" target="_blank" rel="noopener">Published</a></p>
+          </li>
+          <li data-topic="microbiology">
+            <p class="pub-title">Comammox Nitrospira Bacteria Are Dominant Ammonia Oxidizers in Mainstream Nitrification Bioreactors Emended with Sponge Carriers</p>
+            <p>Tuo Huang, Jun Xia, Tao Liu, <strong>Zicheng Su</strong>, Yuntao Guan, Jianhua Guo, Chengwen Wang*, and Min Zheng* (2022). <em>Environmental Science &amp; Technology</em>. <a href="https://doi.org/10.1021/acs.est.2c03641" target="_blank" rel="noopener">Published</a></p>
+          </li>
+          <li data-topic="pfas book">
+            <p class="pub-title">Control strategies for PFAS in aquatic environments</p>
+            <p>Ali, M.; Safarniya, M.; <strong>Zicheng Su</strong>; Zhang, C.; Xu, D.; Guo, J.; Hu, J. (2024). In <em>Emerging Contaminants in Water in Asia Pacific</em>; UNESCO; Chapter 4, Section 4.4, pp. 64-69. <a href="https://unesdoc.unesco.org/ark:/48223/pf0000398363" target="_blank" rel="noopener">UNESCO</a></p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="experience" class="game-window reveal-on-scroll">
+        <div class="window-header">
+          <span>Research Experience</span>
+          <small>trajectory</small>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2026 - Present</span>
+            <h3>Postdoctoral Researcher, The University of Queensland</h3>
+            <p>Developing PFAS polymer/membrane materials, magnetic sorbents and deployable separation technologies at AIBN.</p>
+          </article>
+          <article>
+            <span>2024 - 2026</span>
+            <h3>PFAS research role / postdoctoral transition, AIBN, The University of Queensland</h3>
+            <p>Led pilot-scale sorbent production, treatment-unit design, foam-fractionation integration and Urban Utilities pilot deployment.</p>
+          </article>
+          <article>
+            <span>2020 - 2025</span>
+            <h3>PhD, Environmental Engineering, The University of Queensland</h3>
+            <p>Research on novel nitrogen-cycle microorganisms, acidic nitrification, genome-resolved microbiology and wastewater bioprocesses.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="service" class="game-window reveal-on-scroll">
+        <div class="window-header">
+          <span>Invited Talks &amp; Service</span>
+          <small>professional visibility</small>
+        </div>
+        <ul class="clean-list">
+          <li>Invited guest and oral presenter, Consortium for analysis and remediation of per- and poly fluoroalkyl substances (CAR-PFAS Japan), Tokyo and Tsukuba, 2026</li>
+          <li>Committee, National PFAS Symposium (NFS26), 2026</li>
+          <li>Session Chair and Outstanding Contribution to Conference Organisation, National PFAS Symposium (NFS25), 2025</li>
+          <li>Invited speaker, Australasian Land and Groundwater Association (ALGA), Brisbane, 2025</li>
+          <li>The Eighth International Conference on Nitrification and Related Processes (ICoN8), Princeton University, 2023</li>
+          <li>The Tenth IWA Microbial Ecology and Water Engineering Specialist Conference (MEWE 2023), Brisbane, 2023</li>
+        </ul>
+      </section>
+    </section>
+
+    <aside class="game-panel profile-panel">
+      <div class="trainer-card">
+        <img src="zicheng-field-photo.jpg" alt="Zicheng Su in the field">
+        <h2>Zicheng Su</h2>
+        <p>Environmental and water engineer</p>
+        <ul>
+          <li><strong>Focus</strong><span>PFAS remediation</span></li>
+          <li><strong>Base</strong><span>Brisbane, Australia</span></li>
+          <li><strong>Role</strong><span>Postdoctoral researcher</span></li>
+        </ul>
       </div>
-   
 
-    <div class="links">
-   
-      <a href="https://zichengsu.fun" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-
-    </div>
-					  </li></ol>
-		
-                <p>
-                </p>
-              </ul>
- -->
-
-<!--               <h4>To be continued</h4>
-              <ul>
-                <p>
-                </p><li><strong>"1234"</strong> <br>   <b>1</b>, 2, 3, 4 and 5 <br> 
-                <b>journal</b>, pages. <a href="link">[status]</a>
-                <p></p>
-                <p>
-                </p><li><strong>"1234"</strong> <br>   <b>1</b>, 2, 3, 4 and 5 <br> 
-                <b>journal</b>, pages. <a href="link">[status]</a>
-                <p></p>
-
-              </ul>
- -->
-
- <h3>Peer-Reviewed Publications</h3>
- <hr>
- <ul>
-  <p></p>
-  <p></p>
-  <li>[8] "Minimal data required in reporting new sorbents for removing ‘forever chemicals’" <br>   <u><b>Zicheng Su</b></u>, Zhuojing Yang, Kehan Liu, Chunrong Yu, Jianhua Guo, and Cheng Zhang (2025)<br><i><b>Nat. Rev. Mater.</b></i> <a href="https://www.nature.com/articles/s41578-025-00795-1">[published]</a></p>
-  <p></p>
-  </li>
-</ul>
-
- <ul>
-  <p></p>
-  <p></p>
-  <li>[7] "Kinetic and Physiological Characterization of Acidophilic Nitrobacter spp. in a Nitrite-Oxidizing Culture" <br>   <u><b>Zicheng Su</b></u>, Tianyi Zhang, Tao Liu, Min Zheng, and Jianhua Guo (2025)<br><i><b>Environ. Sci. Technol.</b></i> <a href="https://pubs.acs.org/doi/abs/10.1021/acs.est.4c10020">[published]</a></p>
-  <p></p>
-  </li>
-</ul>
-
-<ul>
-  <p></p>
-  <p></p>
-  <li>[6] "Enrichment and identification of a moderately acidophilic nitrite-oxidizing bacterium" <br>   Jun Xia, Chen Cai, Tao Liu, <u><b>Zicheng Su</b></u>, Zhiguo Yuan, and Min Zheng* (2025)<br><i><b>Water Research X</b></i> <a href="https://doi.org/10.1016/j.wroa.2025.100308">[published]</a></p>
-  <p></p>
-  </li>
-</ul>
-
- <ul>
-   <p></p>
-   <p></p>
-   <li>[5] "Metabolic interactions of a minimal bacterial consortium drive robust nitritation at acidic pH" <br>   Gaofeng Ni, <u><b>Zicheng Su</b></u>, Yu Wang, Zhiyao Wang, Mengxiong Wu, Zhengshuang Hua, Shihu Hu, Zhiguo Yuan, Jianhua Guo, Chris Greening, and Min Zheng* (2023)<br><i><b>bioRxiv</b></i> <a href="https://doi.org/10.1101/2023.10.29.564480">[Preprint]</a></p>
-   <p></p>
-   </li>
- </ul>
-
- 
- <ul>
-   <p></p>
-   <p></p>
-   <li>[4] "Nitrite Oxidation in Wastewater Treatment: Microbial Adaptation and Suppression Challenges" <br>   <u><b>Zicheng Su</b></u>, Tao Liu, Jianhua Guo, and Min Zheng* (2023)<br><i><b>Environ. Sci. Technol.</b></i> <a href="https://doi.org/10.1021/acs.est.3c00636">[published, Critical Review]</a></p>
-   <p></p>
-   </li>
- </ul>
- 
- <ul>
-   <p></p>
-   <p></p>
-   <li>[3] "Adaptation of anammox process for nitrogen removal from acidic nitritation effluent in a low pH moving bed biofilm reactor" <br>   Zhetai Hu, Tao Liu, <u><b>Zicheng Su</b></u>, Jing Zhao, Jianhua Guo, Shihu Hu, Zhiguo Yuan, and Min Zheng* (2023)<br><i><b>Water Research</b></i> <a href="https://doi.org/10.1016/j.watres.2023.120370">[published]</a></p>
-   <p></p>
-   </li>
- </ul>
- 
- <ul>
-   <p></p>
-   <p></p>
-   <li>[2] "Selective Enrichment of Comammox Nitrospira in a Moving Bed Biofilm Reactor with Sufficient Oxygen Supply" <br>   Jing Zhao, Min Zheng*, <u><b>Zicheng Su</b></u>, Tao Liu, Jie Li, Jianhua Guo, Zhiguo Yuan, and Shihu Hu (2022)<br><i><b>Environ. Sci. Technol.</b></i> <a href="https://doi.org/10.1021/acs.est.2c03299">[published]</a></p>
-   <p></p>
-   </li>
- </ul>
- 
- <ul>
-   <p></p>
-   <p></p>
-   <li>[1] "Comammox Nitrospira Bacteria Are Dominant Ammonia Oxidizers in Mainstream Nitrification Bioreactors Emended with Sponge Carriers" <br>   Tuo Huang, Jun Xia, Tao Liu, <u><b>Zicheng Su</b></u>, Yuntao Guan, Jianhua Guo, Chengwen Wang*, and Min Zheng* (2022)<br><i><b>Environ. Sci. Technol.</b></i> <a href="https://doi.org/10.1021/acs.est.2c03641">[published]</a></p>
-   <p></p>
-   </li>
- </ul>
- 
-
- 
-
-
-
-
-
-
-
-              <h3>Experience</h3>
-
-
-              <hr>
-
-              <h4>Acadamic:</h4>
-              <ul>
-                <li>Tutor, Environmental Systems (ENVE2501), the University of Queensland, 2023</li>
-                <li>Research Intern, Institute of Urban Environment, Chinese Academy of Sciences (IUE), 2020-2021</li>
-              </ul>
-<!-- 
-              <h4>Industry:</h4>
-              <ul>
-                <li>coop, Winter 2017</li>
-                <li>coop, Spring 2017</li>
-              </ul> -->
-
-
-              <h4>Conference:</h4>
-              <ul>
-                <li>the Eighth International Conference on Nitrofication and Related Processes (ICoN8), Princeton University, 2023</li>
-              </ul>
-              <ul>
-                <li>the Tenth IWA Microbial Ecology and Water Engineering Specialist Conference (MEWE 2023), Brisbane, 2023</li>
-              </ul>
-
-              <h3>Awards</h3>
-              <hr>
-              <ul>
-                <li>TBD</li>
-              </ul>
-			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1382748464&auto=1&height=66"></iframe>
-      </div>
+      <div class="side-widget link-widget">
+        <div class="panel-title">Links</div>
+        <div class="profile-links">
+          <a href="https://aibn.uq.edu.au/zhang" target="_blank" rel="noopener"><span class="link-icon lab-link"></span>Fluoropolymer Group</a>
+          <a href="https://aibn.uq.edu.au/AustralianPFASCentre" target="_blank" rel="noopener"><span class="link-icon centre-link"></span>Australian PFAS Centre</a>
+          <a href="https://scholar.google.com/citations?user=4b-wpM4AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener"><span class="link-icon scholar-link"></span>Google Scholar</a>
+          <a href="https://www.linkedin.com/in/zicheng-su-278b67102/" target="_blank" rel="noopener"><span class="link-icon linkedin-link"></span>LinkedIn</a>
+          <a href="https://aibn.uq.edu.au/" target="_blank" rel="noopener"><span class="link-icon uq-link"></span>AIBN@UQ</a>
+          <a href="https://unesdoc.unesco.org/ark:/48223/pf0000398363" target="_blank" rel="noopener"><span class="link-icon unesco-link"></span>UNESCO publication</a>
+        </div>
       </div>
 
-    </div>
+      <div class="side-widget">
+        <div class="panel-title">News / Media</div>
+        <ul class="activity-list">
+          <li><strong>AIBN</strong><a href="https://aibn.uq.edu.au/article/2025/06/lab-local-impact-uq-researchers-tackle-pfas-prime-support" target="_blank" rel="noopener">From lab to local impact: PFAS research with ON Prime support</a></li>
+          <li><strong>AIBN</strong><a href="https://aibn.uq.edu.au/article/2025/09/aibn-magnet-tech-offers-hope-pfas-removal-water-treatment" target="_blank" rel="noopener">Magnet tech offers hope for PFAS removal in water treatment</a></li>
+          <li><strong>AIBN</strong><a href="https://aibn.uq.edu.au/article/2025/04/aibn-researchers-push-global-action-pfas-contamination" target="_blank" rel="noopener">Researchers push global action on PFAS contamination</a></li>
+          <li><strong>UQ</strong><a href="https://news.uq.edu.au/2025-09-magnetic-uq-tech-promising-pfas-solution-wastewater-plants" target="_blank" rel="noopener">Magnetic UQ tech promising PFAS solution for wastewater plants</a></li>
+        </ul>
+      </div>
 
-<hr>
+      <div class="dialogue-box">
+        <strong>Field note</strong>
+        <p>Building treatment routes for contaminated solids, leachate and water-sector residuals.</p>
+      </div>
+    </aside>
+  </main>
 
-      
-      <footer class="site-footer h-card">
-  <p class="text-center"><small class="text-muted">Copyright © Zicheng Su –<script type="text/javascript">
-  var today = new Date()
-  var year = today.getFullYear()
-  document.write(year)
+  <footer class="site-footer">
+    <p>Copyright &copy; Zicheng Su -
+      <script type="text/javascript">
+        var today = new Date();
+        document.write(today.getFullYear());
       </script>
-  </small></p>
-</footer>
+    </p>
+  </footer>
 
+  <script>
+    var progress = document.querySelector('.scroll-progress');
+    window.addEventListener('scroll', function() {
+      var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      var progressValue = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+      if (progress) progress.style.transform = 'scaleX(' + progressValue + ')';
+    }, { passive: true });
 
-  
-</body></html>
+    if ('IntersectionObserver' in window) {
+      var revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.reveal-on-scroll').forEach(function(section) {
+        revealObserver.observe(section);
+      });
+    } else {
+      document.querySelectorAll('.reveal-on-scroll').forEach(function(section) {
+        section.classList.add('is-visible');
+      });
+    }
+
+    document.querySelectorAll('.filter-button').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var filter = button.getAttribute('data-filter');
+        document.querySelectorAll('.filter-button').forEach(function(item) {
+          item.classList.toggle('active', item === button);
+        });
+        document.querySelectorAll('.publication-list li').forEach(function(item) {
+          var topics = item.getAttribute('data-topic') || '';
+          item.classList.toggle('is-hidden', !(filter === 'all' || topics.indexOf(filter) !== -1));
+        });
+      });
+    });
+
+    document.querySelectorAll('.quest, .tab').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.querySelectorAll('.quest, .tab').forEach(function(item) {
+          item.classList.remove('active');
+        });
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
